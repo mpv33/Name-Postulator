@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>NAME POSTULATOR</title> 
+            <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       
+       
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="np.js"></script>
+	</head> 
+	<body >
+       <section>
+       	<video src="smoke.mp4"  autoplay muted loop=loop></video>
+      
+       	<h1>
+       		<span>N</span>
+       		<span>A</span>
+       		<span>M</span>
+       			<span>E</span>
+       			<span></span>
+       			<span>P</span>
+			<span>O</span>
+			<span>S</span>
+			<span>T</span>
+			<span>U</span>
+      	<span>L</span>
+      	<span>A</span>
+      	<span>T</span>
+      	<span>O</span>
+      	<span>L</span>
+      	<span>R</span>
+      	
+       	</h1>
+       </section>
+       
+        <div class="container mt-5">
+            <div class="ser col-md-12">
+            <img src="jobclues.png" class="inp-img" style="float: left">
+                <input id="text1"  class="form-control" placeholder="Enter your first name">
+                <!--<label id="lu" style="color: red;visibility: hidden">Invilid</label><br><br>-->
+                <button onclick="fn1()"  class="btn"id="btn1">Search</button>
+                <button  class="btn mt-3 ml-2"id="dbtn" style="display: none;">Download</button>
+            </div>
+            <div id="outout">
+                <div id="inout">
+                  
+					
+                   <img src="img%20(2).png" id="in-img">
+                    <p class="np">Name Postulator</p>
+                    <div id="out"></div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+           <div class="container mt-5">
+           <div class="row ml-5 mt-5">
+           	<div class="card ml-5 mt-5" style="width: 18rem;">
+  <img src="photo-1553481187-be93c21490a9.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool. Games are distinct from work</p>
+    <a class="btn">Next Game</a>
+  </div>
+</div>
+       <div class="card ml-5 mt-5" style="width: 18rem;">
+  <img src="images%20(1).jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool. Games are distinct from work</p>
+    <a class="btn">Next Game</a>
+  </div>
+</div>
+       <div class="card ml-5 mt-5" style="width: 18rem;">
+  <img src="images%20(2).jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool. Games are distinct from work</p>
+    <a class="btn">Next Game</a>
+  </div>
+</div>
+        </div>
+           
+            <div class="cpd"><br>fun academy &copy; 2020-21</div>
+               
+			</div>
+        </footer>
+	</body> 
+<script>
+var input = document.getElementById("text1");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn1").click();
+  }
+});
+    $('#dbtn').click(function(){
+		 $('#outout').addClass('x2');
+            html2canvas($('#outout'), 
+             {
+                onrendered: function (canvas) {
+				var a = document.createElement('a');
+                    a.href = canvas.toDataURL("image/png");       
+                    a.download = 'image.png';
+					a.click();
+                }
+             });
+		});
+</script>
+    
+</html>					 
