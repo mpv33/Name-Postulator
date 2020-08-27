@@ -3,6 +3,10 @@
     background-color: azure;
     margin: 0;
     padding: 0;
+
+}
+body{
+overflow-x: hidden;
 }
 .ser{
     padding-bottom: 10px;
@@ -29,6 +33,7 @@
 	margin-top:-20px;
 }
 #text1:hover{
+	
 	
 }
 
@@ -195,9 +200,9 @@ h1 span
     background: none;
 	box-shadow: 5px 5px 5px black;
 	border-top: 5px solid firebrick;
-	margin-left: 10%;
+	margin-left: 30%;
 	
-	width:50%;
+	width:310px;
 	align-items: center;
 }
 	h1
